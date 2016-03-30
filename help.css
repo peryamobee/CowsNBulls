@@ -23,8 +23,9 @@
     font-style: normal;
     font-weight: 700;
     position: absolute;
-    left: 5px;
-    top: -1px;
+    left: 1.6vw;
+    top: -0.2vh;
+    font-size: 6vw;
 }
 /*.stage-0 .help,*/
 .help:hover {
