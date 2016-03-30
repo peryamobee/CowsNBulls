@@ -1,0 +1,39 @@
+h1{
+    background: inherit;
+}
+h1 .bulles{
+    color: #CD1041;
+    background: white;
+    margin-right: 0.3em;
+}
+h1 .bulles:before,
+h1 .bulles:after {
+    content: '{';
+    display: inline-block;
+    /*color: black;*/
+    z-index: -1;
+    position: relative;
+    text-shadow: 0 0 3px;
+
+    font-size: 50px;
+}
+h1 .bulles:before{
+    transform: rotate(-77deg);
+    margin-right: -18px;
+    left: -10px;
+}
+h1 .bulles:after{
+    transform: rotate(-98deg);
+    margin-left: -15px;
+}
+
+h1 .cows{
+    color:black
+}
+
+h1 .cows span:nth-last-child(odd){
+    color: #eceaea;
+}
+h1 .cows span:nth-last-child(even){
+    color:  #9E9E9E;
+}

@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Bulls & Cows</title>
+    <script src="Http.js"></script>
+    <script src="bullesNCows.js"></script>
+    <script src="helper.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="logo.css">
+    <link rel="stylesheet" href="asset/style.css">
+    <link rel="stylesheet" href="help.css">
+</head>
+<body class="stage-0">
+<div class="help">
+    <i> I </i>
+    <div class="content">
+        <a href="https://www.youtube.com/watch?v=r_dw8iV_52g&feature=youtu.be" target="_blank">youtube movie</a>
+        <div>
+            <h2>Bulls and Cows</h2>
+            <p>Is an old code-breaking mind, a game with numbers that may date back a century or more.</p>
+            <p>Your goel is to guess the computer selected 4 uniq digit number (each number appear most one)</p>
+            <p>In every guess game tell you how many bulls and cows you get.</p>
+            <p><i class="icon-bull"></i> Bull mean you have digit in corrent place;</p>
+            <p><i class="icon-cow"></i> Cow mean you have digit not in corrent place;</p>
+
+            <p>When you get 4 bulls you win the game;</p>
+        </div>
+    </div>
+</div>
+
+<!--game start here-->
+    <h1>
+        <span class="bulles">Bulls</span> &
+        <span class="cows">
+            <span>C</span><span>o</span><span>w</span><span>s</span>
+        </span>
+    </h1>
+    <div data-component=screen data-type="welcome" class="welcome-screen">
+
+        <button data-behavior=start-btn class="start-btn">Play Now</button>
+    </div>
+<label for="user-guess">
+    <div data-component=screen data-type=board  class="board-screen">
+
+        <div class="top-panel">
+            <span class="attempts-number">20</span>
+
+
+            <form onsubmit="return false">
+
+                    <input data-ref="user-geuss"
+                           id="user-guess"
+                           maxlength="4"
+                    autocomplete="off">
+                    <button data-behavior=send-guess-btn >Send</button>
+            </form>
+
+            <span class="massage"></span>
+
+        </div>
+
+
+        <!--<div class="information">
+            <span class="bulls">
+                <i class="bulls-icon"></i>
+                <span class="number">10</span>
+            </span>
+
+            <span class="cows">
+                <i class="cows-icon"></i>
+                <span class="number">10</span>
+            </span>
+        </div>-->
+        <div class="history">
+            <table cellspacing="0">
+                <thead>
+                    <th class="index">&nbsp;</th>
+                    <th class="bulls"><i class="icon-bull"></i> bulls</th>
+                    <th class="cows"><i class="icon-cow"></i> cows</th>
+                    <th class="guess">guess</th>
+                </thead>
+                <tbody id="historyBody"></tbody>
+            </table>
+        </div>
+
+    </div>
+</label>
+    <div data-component="screen" data-type="end-game" class="end-game-screen">
+
+        <h2>Your guess number</h2>
+        <div class="total-attempts-number attempts-number">20</div>
+        <h2>previous guess number</h2>
+        <div class="previous-attempts-number attempts-number">10</div>
+        <h2>Best guess number</h2>
+        <div class="best-attempts-number attempts-number">10</div>
+        <button data-behavior=start-btn class="start-btn">Play Again</button>
+    </div>
+</body>
+</html>
