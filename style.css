@@ -82,7 +82,7 @@ body.stage-2 [data-type=end-game]{
         position: relative;
         left: 2rem;
     }
-    .board-screen input{
+    .board-screen input[type=number]{
         width: 3em;
         font-size: 5vw;
         font-family: cursive;
@@ -92,7 +92,7 @@ body.stage-2 [data-type=end-game]{
         position: relative;
         z-index: 1;
     }
-    .board-screen button{
+    .board-screen input[type=submit]{
         box-sizing: content-box;
         width: 7vw;
         height: 8.6vw;
