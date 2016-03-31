@@ -99,6 +99,7 @@ body.stage-2 [data-type=end-game]{
         vertical-align: top;
         margin-left: -3.4vw;
         border-style: groove;
+        line-height: 8.6vw;
     }
     .board-screen .massage{
         display: inline-block;
