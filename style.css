@@ -31,8 +31,8 @@ h1{
     color: gray;
 }
 .start-btn{
-    line-height: 2.7rem;
-    width: 10rem;
+    line-height: 8vw;
+    width: 30vw;
     border-radius: 4em/7em;
     background: linear-gradient(135deg, rgba(204,110,110,0.5) 0%,rgba(204,110,110,0.48) 17%,rgba(254,255,255,0.52) 43%,rgba(254,255,255,0.54) 62%,rgba(97,108,112,0.58) 90%,rgba(41,55,61,0.58) 100%);
     border: 3px solid;
@@ -94,8 +94,8 @@ body.stage-2 [data-type=end-game]{
     }
     .board-screen button{
         box-sizing: content-box;
-        width: 3em;
-        height: 4em;
+        width: 7vw;
+        height: 8.6vw;
         vertical-align: top;
         margin-left: -3.4vw;
         border-style: groove;
