@@ -28,21 +28,24 @@
     font-size: 6vw;
 }
 /*.stage-0 .help,*/
+.help:active,
 .help:hover {
     transition: all 0.7s ;
     left: 0;
-    width: 100%;
+    width: 100vw;
     max-height: 100vh;
     opacity: 1;
     border-radius: 0;
     transition-delay: 0.2s;
 }
 /*.stage-0 .help .content,*/
+.help:active .content,
 .help:hover .content{
     display: block;
     opacity: 1;
 }
 /*.stage-0 head i,*/
+.help:active >i,
 .help:hover >i {
     display: none;
 }
